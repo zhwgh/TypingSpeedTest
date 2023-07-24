@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <title>Typing Speed Test</title>
+  </head>
+  <body>
+    <header class="masthead">
+      <h1>تست سنجش سرعت تایپ</h1>
+    </header>
+    <main class="main">
+      <article class="intro">
+        <p dir="rtl">
+          با شروع تایپ، تایمر شروع به شمارش زمان می کند و با تایپ هر حرف توسط
+          کاربر مطابقت متن کاربر با متن الگو چک می شود.
+        </p>
+      </article>
+      <!-- .intro -->
+      <section class="test-area">
+        <div class="pattern">متن الگو :</div>
+        <div id="origin-text">
+          <p>The text to test.</p>
+        </div>
+        <!-- #origin-text -->
+
+        <div class="test-wrapper">
+          <textarea
+            id="test-area"
+            name="textarea"
+            rows="6"
+            placeholder=" با تایپ اولین حرف تایمر شمارش را آغاز میکند"
+          ></textarea>
+        </div>
+        <!-- .test-wrapper -->
+
+        <div class="meta">
+          <section id="clock">
+            <div class="timer">00:00:00</div>
+          </section>
+
+          <button id="reset">از نو</button>
+        </div>
+        <!-- .meta -->
+      </section>
+      <!-- .test-area -->
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>
